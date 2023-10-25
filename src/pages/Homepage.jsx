@@ -47,7 +47,7 @@ const Homepage = () => {
   <Container>
        
             <div className='main'>
-                <input type='text' name='text' placeholder='Add a todo' value={input} onChange={(e)=>{setInput(e.target.value)}} />
+                <input type='text' name='text' placeholder='Add a Note' value={input} onChange={(e)=>{setInput(e.target.value)}} />
                 <button onClick={saveTodo} >Add</button>
             </div>
             <div className="list">

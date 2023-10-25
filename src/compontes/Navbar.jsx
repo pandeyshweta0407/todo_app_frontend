@@ -7,11 +7,12 @@ const Navbar = () => {
   return (
     <Container>
         <nav>
-            <div className='text'>TODO APP</div>  
+            <div className='text'>NOTE APP</div>  
              <span>
-             <Link to="#" >Home</Link>
+            <Link to="#" >Home</Link>
             <Link to="#" >About</Link>
-            <Link to="#" >Contant</Link>
+            <Link to="#" >Service</Link>
+            <Link to="#" >Contact</Link>
             
              </span>
         </nav>

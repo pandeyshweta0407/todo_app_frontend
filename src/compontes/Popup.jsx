@@ -5,7 +5,7 @@ import {RxCross1} from "react-icons/rx";
 import axios from 'axios';
 import { baseURL } from '../utils/APIRoutes';
 
-const Poppup = ({setShowPopUp , popupContent ,setUpdateUi }  ) => {
+const Poppup = ({ setShowPopUp ,popupContent ,setUpdateUi }  ) => {
 
   const [input , setInput] = useState(popupContent.text);
    
@@ -24,13 +24,13 @@ const Poppup = ({setShowPopUp , popupContent ,setUpdateUi }  ) => {
   return (
     <Container>
        <div className="popup">
-       <RxCross1 className='cross' onClick={()=>{setShowPopUp(false)}} />
+       <RxCross1  className="cross" onClick={()=>{setShowPopUp(false)}}  />
        <h1 className='update'>Update TODO </h1>
         <div className="input_holder_upadate">
         <input 
               type='text'
               name='text'
-              placeholder='Update Todo...'
+              placeholder='Update Note...'
               value={input}
               onChange={(e)=>{setInput(e.target.value)}} 
         />
@@ -70,6 +70,9 @@ const Container = styled.div`
     left:550px;
     top:-10px;
     font-size:30px;
+     &:hover{
+      border:2px solid white;
+     }
   }
 
   .input_holder_upadate{
@@ -85,6 +88,8 @@ const Container = styled.div`
   .update{
     position:relative;
     bottom:50px;
+    border-bottom: 2px solid white;
+     width:500px;
   }
 
 `;
