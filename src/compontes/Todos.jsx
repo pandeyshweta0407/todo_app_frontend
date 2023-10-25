@@ -48,7 +48,7 @@ const Todos = ( {text , id ,   setUpdateUi , setShowPopUp ,setPopUpContent}) => 
 const Container = styled.div`
   
    .todo{
-    height:200px;
+    min-height:200px;
     width: 300px;
     border-radius: 10px;
     font-size:30px;
@@ -87,7 +87,7 @@ const Container = styled.div`
     margin-top:10px;
     padding:2px;
     height:170px;
-    width: 270px;
+    width:270px;
     word-wrap: break-word;
     overflow:auto;
   
